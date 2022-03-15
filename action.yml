@@ -1,13 +1,13 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'Hello World'
+description: 'あいさつして、あいさつした時間を表示する'
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  who-to-greet:
+    description: 'あいさつする相手'
     required: true
-    default: '1000'
+    default: '世界'
 outputs:
-  time: # output will be available to future steps
-    description: 'The current time after waiting'
+  time:
+    description: 'あいさつした時間'
 runs:
   using: 'node16'
   main: 'dist/index.js'
